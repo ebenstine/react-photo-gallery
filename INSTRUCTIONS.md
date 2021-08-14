@@ -4,28 +4,28 @@ Before you get started make sure to look through the code that has been provided
 
 ### Setup
 
-There is no database component to base mode. All data is stored in an array on the server. Before you get started, add a few images to the `public/images` folder and modify the `server/modules/data.js` to include an `id`, `title`, `description` and `path for` each of your images. Each `id` should be a unique number (e.g. 1, 2, 3...).
+There is no database component to base mode. All data is stored in an array on the server. Before you get started, add a few images to the `public/images` folder and modify the `server/modules/data.js` to include an `id`, `title`, `description` and `path for` each of your images. Each `id` should be a unique number (e.g. 1, 2, 3...).  DONE
 
 Running the server code requires `nodemon`. If you don't already have `nodemon`, install it globally with `npm install nodemon --global`.
 
 ```
-npm install
-npm run server
+npm install   DONE
+npm run server   DONE
 ```
 
 Now that the server is running, open a new terminal tab with `cmd + t` and start the react client app.
 
 ```
-npm run client
+npm run client DONE
 ```
 
-Between the server and client, you'll need two terminal tabs! Because we're using `nodemon`, both our client side and server side will automatically spin back up when changes are made!
+Between the server and client, you'll need two terminal tabs! Because we're using `nodemon`, both our client side and server side will automatically spin back up when changes are made!  DONE
 
 ## BASE MODE
 
 For this project you will create a gallery page to share pictures of things that are important to you. Visitors can click on an image to see a description and use a button to "like" an image. 
 
-To practice passing values through `props` in React, you will build the gallery using mulitple components - an `App`, `GalleryList`, and `GalleryItem`.
+To practice passing values through `props` in React, you will build the gallery using multiple components - an `App`, `GalleryList`, and `GalleryItem`.
 
 - `App` - represents the overall application or site 
 - `GalleryList` - represents the gallery of images. By componentizing, we could reuse this component in different applications
