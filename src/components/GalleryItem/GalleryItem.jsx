@@ -2,27 +2,41 @@ import { useState } from 'react'
 function GalleryItem({
     photo
 }) {
+    const [isHidden, setIsHidden] = useState(false);
     let [count, setCount] = useState(0);
     const onButtonClick = () => {
         setCount(count + 1);
         console.log('On Button Click', count);
     }
+    const handleFlip = () => {
+        if (isHidden) {
+            setIsHidden(false);
+        } else {
+            setIsHidden(true);
+        }
+    };
+
     return (
         <>
-            <div className='items'>
+            <div className="listItem centerPadding">
+                {isHidden ? (
+                    <p onClick={handleFlip}>{photo.description}</p>
+                ) : (
+                    <img onClick={handleFlip} src={photo.path} />
+                )}
+                <button
+                    className="button"
+                    variant="outlined"
+                    color="secondary"
+                    onClick={handleLikes}
+                >
+                    ❤️
+                </button>
 
-                <img src={photo.path} />
+                <p>{gallery.likes} People ❤️ This</p>
             </div>
-            
-            
-            <div className='buttons'>
+            );
 
-                <button onClick={onButtonClick}>Love It!</button>
-
-            </div>
-            <div className='count'>
-                <h4>{count} People ❤️ This</h4>
-            </div>
         </>
 
 
