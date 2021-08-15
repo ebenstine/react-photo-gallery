@@ -27,7 +27,10 @@ p{
     width: 200px;
     margin: auto;
     border: solid rgb(3, 4, 48);
-    animation: fadeInAnimation ease 1 sec;
+    animation: fadeIn ease 2s;
     
 }
 
+.fade-in{
+    opacity: .9
+}

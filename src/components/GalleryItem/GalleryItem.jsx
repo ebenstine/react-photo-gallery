@@ -23,7 +23,7 @@ return (
     <>
         <div className="listItem">
             {isHidden ? (
-                <p className="description fade1" onClick={handleFlip}>{photo.description}</p>
+                <p className="description fade-in" onClick={handleFlip}>{photo.description}</p>
             ) : (
                 <img onClick={handleFlip} src={photo.path} />
                 
