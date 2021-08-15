@@ -1,34 +1,25 @@
-import React from 'react'
-import {useState} from 'react'
+import React, {useState} from 'react'
+
 import GalleryItem from '../GalleryItem/GalleryItem';
 
 function GalleryList({galleryList, retrieveGallery}) {
     
-
-    
-
-    
     return (
-       
-       <div>
-            <div>
-                {galleryList.map((photo)=>
-                    <ul >
-                    <GalleryItem 
-                        
-                        key={photo.id}
-                        photo={photo}
-                        retrieveGallery={retrieveGallery}
-                        />
-                    </ul>
-                    
-                    
-                    
-                )}
-            </div>
-        </div>
-        
-    )
+    <div className="flex">
+    {galleryList.map((photo) => {
+        return (
+            <GalleryItem
+                retrieveGallery={retrieveGallery}
+                key={photo.id}
+                photo={photo}
+            />
+        );
+
+    })}
+    </div>
+
+);
+
 }
 
-export default GalleryList
+export default GalleryList;

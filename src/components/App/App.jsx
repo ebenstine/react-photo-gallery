@@ -7,7 +7,7 @@ import axios from 'axios';
 function App() {
   //begin with empty gallery array
   const [galleryList, setGalleryList] = useState([]);
-
+  
   //run when the component is put on the DOM
   useEffect(() => {
     retrieveGallery();
@@ -24,27 +24,8 @@ function App() {
     });
   }
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  return (
+
+return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Family Snapshot 2019-2021</h1>
@@ -53,6 +34,7 @@ function App() {
         <GalleryList 
           galleryList={galleryList}
           retrieveGallery={retrieveGallery}
+          
         />
 
        
@@ -71,17 +53,4 @@ export default App;
         
         
         
-      {/*}  <p>Gallery goes here</p> 
-       
-        <img src="images/4745A.jpeg"/> 
-        <img src="images/AM1.jpeg"/>
-        <img src="images/AM2.jpeg"/>
-        <img src="images/AM3.jpeg"/>
-        <img src="images/LA1.jpeg"/>
-        <img src="images/LA2.jpeg"/>
-        <img src="images/M1.jpeg"/>
-      </div>
-    );
-
-
-  export default App; */}
+     
