@@ -1,3 +1,5 @@
+/* THIS DATABASE IS CURRENTLY INACTIVE FOR THE APP
+
 CREATE TABLE gallery(
     id serial PRIMARY KEY,
     path varchar(150) NOT NULL,
