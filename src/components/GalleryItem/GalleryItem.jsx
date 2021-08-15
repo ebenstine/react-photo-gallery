@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import React from 'react';
 
 
@@ -31,6 +31,7 @@ return (
                 <p onClick={handleFlip}>{photo.description}</p>
             ) : (
                 <img onClick={handleFlip} src={photo.path} />
+                
             )}
         <div
             className="button">

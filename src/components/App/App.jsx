@@ -23,11 +23,11 @@ function App() {
       console.log(`Couldn't load photos; try again later`, error);
     });
   }
-  const handleLikes = () => {
-    console.log(photo);
+  const handleLikes = (id) => {
+   
     
     axios
-        .put ('/gallery/like/:id')
+        .put ('/gallery/like/'+id)
         .then((response) => {
             console.log(response);
             console.log("response.data", response.data);
