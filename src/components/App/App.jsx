@@ -23,6 +23,19 @@ function App() {
       console.log(`Couldn't load photos; try again later`, error);
     });
   }
+  const handleLikes = () => {
+    console.log(photo);
+    
+    axios
+        .put ('/gallery/like/:id')
+        .then((response) => {
+            console.log(response);
+            console.log("response.data", response.data);
+            retrieveGallery();
+        }).catch((error) => {
+            console.log('Error in put', error);
+        });
+};
 
 
 return (
@@ -34,7 +47,7 @@ return (
         <GalleryList 
           galleryList={galleryList}
           retrieveGallery={retrieveGallery}
-          
+          handleLikes={handleLikes}
         />
 
        
