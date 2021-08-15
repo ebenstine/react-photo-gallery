@@ -1,17 +1,12 @@
-import axios from 'axios';
+import "./GalleryItem.css";
 import { useState, useEffect } from 'react';
 import React from 'react';
 
-
-
+//function that details a single image
 function GalleryItem({
     photo, retrieveGallery, handleLikes
 }) {
-    /*let [count, setCount] = useState(0);
-    const onButtonClick = () => {
-        setCount(count + 1);
-        console.log('On Button Click', count);*/
-
+//provides logic for the display switch with conditional states    
 const [isHidden, setIsHidden] = useState(false);
 const handleFlip = () => {
     if (isHidden) {
@@ -22,13 +17,13 @@ const handleFlip = () => {
 };
 
 
-//button clicks
+//details button click actions and DOM info
 
 return (
     <>
-        <div className="listItem centerPadding">
+        <div className="listItem">
             {isHidden ? (
-                <p onClick={handleFlip}>{photo.description}</p>
+                <p className="description fade1" onClick={handleFlip}>{photo.description}</p>
             ) : (
                 <img onClick={handleFlip} src={photo.path} />
                 
@@ -37,7 +32,7 @@ return (
             className="button">
              <button onClick={() => handleLikes(photo.id)}>❤️</button>
 
-            <p>{photo.likes} People ❤️ This</p>
+            <p>Hey! {photo.likes} People ❤️ This</p>
            </div> 
         </div>
 </>

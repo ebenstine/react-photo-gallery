@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     retrieveGallery();
   }, [] );
-
+  //function get all the images
   const retrieveGallery = () => {
     axios
       .get('/gallery')
@@ -23,9 +23,10 @@ function App() {
       console.log(`Couldn't load photos; try again later`, error);
     });
   }
+  //function to update a single image
   const handleLikes = (id) => {
    
-    
+  //communicates to server 
     axios
         .put ('/gallery/like/'+id)
         .then((response) => {
@@ -37,11 +38,11 @@ function App() {
         });
 };
 
-
+//draws in gallery from component and provides DOM info
 return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Family Snapshot 2019-2021</h1>
+          <h1 className="App-title">Light Studies at the Old House</h1>
         </header>
         
         <GalleryList 

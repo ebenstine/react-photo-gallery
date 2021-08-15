@@ -3,30 +3,31 @@ img {
     width: 200px;
   }
 
-  .listItem {
-    margin: 1em;
-    border-radius: 25px;
-    text-align: center;
-   
-}
 .button{
     padding: 5px 10px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    
     font-size: 12px;
     border-radius: 25px;
 }
 
 
-.centerPadding{
-    padding: 40px 20px;
-    height: center;
-    line-height: normal;
-}
+
 
 
 p{
-    color: white;
+    color: rgb(3, 4, 48);
     text-align: center;
 }
+
+.description{
+    background-color: rgb(252, 231, 162);
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    border: solid rgb(3, 4, 48);
+    animation: fadeInAnimation ease 1 sec;
+    
+}
+

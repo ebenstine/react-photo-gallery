@@ -1,12 +1,16 @@
 .App {
   text-align: center;
+  background-color: rgb(247, 252, 209);
+  font-family: monospace;
 }
 
+
 .App-header {
-  background-color: #222;
+  background-color: rgb(3, 4, 48);
   padding: 1em;
-  color: white;
+  color: whitesmoke;
   margin-bottom: 1em;
+  border-bottom: 2px solid rgb(255, 154, 2);
 }
 
 .App-title {
@@ -15,4 +19,5 @@
 img {
   height: 200px;
   width: 200px;
+  border: solid rgb(3, 4, 48)
 }
