@@ -1,10 +1,10 @@
 # Project Name
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+Light Studies at the Old House.
 
 ## Description
 
- This crud app is a clickable gallery of light studies I took in my old house.  When the page loads, you can click the photo the images disappears and a brief description of the image clicked appears in its place.  There is also a like button below that can be clicked and will update a count with how many times it has been clicked.
+ Having recently sold my first home, I made this crud app as a nostalgic clickable gallery of light studies I took there.  When the page loads, you can click the photo the images disappears and a brief description of the image clicked appears in its place.  There is also a like button below that can be clicked and will update a count with how many times it has been clicked.
 
 - `App` - This represents the overall application of the site.
 - `GalleryList` - This represents the gallery of images. 
