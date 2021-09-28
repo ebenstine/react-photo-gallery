@@ -19,5 +19,11 @@
 img {
   height: 200px;
   width: 200px;
-  border: solid rgb(3, 4, 48)
+  border: solid rgb(3, 4, 48);
+  border-radius: 3px;
+}
+
+.footer{
+  background-color: rgb(3, 4, 48);
+  border-top: 2px solid rgb(255, 154, 2);
 }
