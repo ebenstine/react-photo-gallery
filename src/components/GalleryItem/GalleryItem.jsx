@@ -23,9 +23,9 @@ function GalleryItem({
 
     return (
         <>
-            <div className="listItem">
+            <div className="description">
                 {isHidden ? (
-                    <p className="description fade-in" onClick={handleFlip}>{photo.description}</p>
+                    <p onClick={handleFlip}>{photo.description}</p>
                 ) : (
                     <img onClick={handleFlip} src={photo.path} />
 
