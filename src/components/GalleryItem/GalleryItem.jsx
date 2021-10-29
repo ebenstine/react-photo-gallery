@@ -23,7 +23,7 @@ function GalleryItem({
 
     return (
         <>
-            <div className="switchDiv">
+            <div className="switcheroo">
             {isHidden ? 
                 <p className="description" onClick={handleFlip}>{photo.description}</p>
                 : 

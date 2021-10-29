@@ -16,5 +16,13 @@
 .App-title {
   font-size: 1.5em;
 }
+.footer {
+  background-color: rgb(3, 4, 48);
+  padding: 1em;
+  color: whitesmoke;
+  border-top: 2px solid rgb(255, 154, 2);
+}
+
+
 
 

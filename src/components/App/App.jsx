@@ -51,10 +51,10 @@ function App() {
         handleLikes={handleLikes}
       />
     </div>  
-    
+    <footer className="footer"></footer>
     </div>
     
- 
+    
   );
 }
 
