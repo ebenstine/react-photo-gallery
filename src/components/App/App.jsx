@@ -44,14 +44,14 @@ function App() {
       <header className="App-header">
         <h1 className="App-title">Light Studies at the Old House</h1>
       </header>
-
+    <div>
       <GalleryList
         galleryList={galleryList}
         retrieveGallery={retrieveGallery}
         handleLikes={handleLikes}
       />
-
-    <footer className="footer"> you </footer>
+    </div>  
+    
     </div>
     
  

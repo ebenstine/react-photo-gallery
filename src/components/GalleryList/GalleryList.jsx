@@ -5,7 +5,7 @@ import GalleryItem from '../GalleryItem/GalleryItem';
 function GalleryList({galleryList, retrieveGallery, handleLikes}) {
     
     return (
-    <div>
+    <>
     {galleryList.map((photo) => {
         return (
             <GalleryItem
@@ -19,7 +19,7 @@ function GalleryList({galleryList, retrieveGallery, handleLikes}) {
         );
 
     })}
-    </div>
+    </>
 
 );
 

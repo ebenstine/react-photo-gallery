@@ -4,7 +4,7 @@ import React from 'react';
 
 //function that details a single image
 function GalleryItem({
-    photo, retrieveGallery, handleLikes
+    photo, handleLikes
 }) {
     //provides logic for the display switch with conditional states    
     const [isHidden, setIsHidden] = useState(false);
@@ -23,21 +23,25 @@ function GalleryItem({
 
     return (
         <>
-            <div className="description">
-                {isHidden ? (
-                    <p onClick={handleFlip}>{photo.description}</p>
-                ) : (
-                    <img onClick={handleFlip} src={photo.path} />
-
-                )}
-                <div
-                    className="countUp">
-                    <button className="button" onClick={() => handleLikes(photo.id)}>❤️</button>
-
-                    <p>Hey! {photo.likes} People ❤️ This</p>
-                </div>
-            </div>
-        </>
+            <div className="switchDiv">
+            {isHidden ? 
+                <p className="description" onClick={handleFlip}>{photo.description}</p>
+                : 
+                <img className="image" onClick={handleFlip} src={photo.path}></img>
+                  
+            }           
+            </div> 
+            
+            <br></br>
+            
+            <button className="button" onClick={() => handleLikes(photo.id)}>❤️</button>
+            
+           
+            <p>Hey! {photo.likes} People Like This</p>
+            
+        
+        
+        </>     
 
 
 
